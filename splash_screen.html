@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siandesa</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/libraries/bootstrap/css/bootstrap.min.css">
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="assets/libraries/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libraries/owlcarousel/owl.theme.default.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/libraries/fontawesome/font-awesome.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Section Start -->
+    <section class="splash-screen">
+        <div class="container" style="padding-top: 100px;">
+            <!-- splash screen -->
+            <div class="splash-screen-wrapper">
+                <div class="splash-screen-content">
+                    <div class="splash-screen-logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </div>
+                    <div class="splash-screen-text">
+                        <h1>Siandesa</h1>
+                        <p>Sistem Informasi Desa</p>
+                    </div>
+                    <div class="splash-screen-button">
+                        <a href="login.php" class="btn btn-primary">Login</a>
+                        <a href="register.php" class="btn btn-secondary">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section End -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Jquery JS -->
+    <script src="assets/libraries/jquery/jquery.min.js"></script>
+    <!-- Carousel JS -->
+    <script src="assets/libraries/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Alpine JS -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script>
+        // Load More JS
+        $(document).ready(function() {
+            $(".card-blogs").slice(0, 3).show();
+            $("#loadMore").on("click", function(e) {
+                e.preventDefault();
+                $(".card-blogs:hidden").slice(0, 3).slideDown();
+                if ($(".card-blogs:hidden").length == 0) {
+                    $("#loadMore").text("Kembali").addClass("noContent");
+                }
+            });
+
+        })
+    </script>
+    <script>
+        // Limit Text Card
+        $(".card-text p").text(function(index, currentText) {
+            var maxLength = $(this).parent().attr('data-maxlength');
+            if (currentText.length >= maxLength) {
+                return currentText.substr(0, maxLength) + "...";
+            } else {
+                return currentText
+            }
+        });
+    </script>
+    <script>
+        // Image Edit
+        $(document).ready(function() {
+            var readURL = function(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        $('.profile-pic').attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            $(".file-upload").on('change', function() {
+                readURL(this);
+            });
+            $(".upload-button").on('click', function() {
+                $(".file-upload").click();
+            });
+        });
+    </script>
+</body>
+
+</html>

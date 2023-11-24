@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siandesa</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/libraries/bootstrap/css/bootstrap.min.css">
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="../assets/libraries/owlcarousel/owl.carousel.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../assets/libraries/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/libraries/owlcarousel/owl.theme.default.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.png">
+</head>
+
+<body>
+    <section class="auth-section">
+        <div class="container">
+            <div class="content-auth">
+                <div class="image-login d-flex justify-content-center pt-5">
+                    <div class="col-8">
+                        <img src="../assets/images/illustration/empty.svg" alt="">
+                    </div>
+                </div>
+                <h3 class="text-center mb-2">Cek NIK Kamu</span>
+                </h3>
+                <p class="text-center mb-5">Silahkan isi form dibawah untuk cek nik kamu</p>
+                <div class="form-login px-2">
+                    <form action="validasi_nik.html" class="needs-validation" novalidate>
+                        <div class="col-12">
+                            <div class="form-group mb-4">
+                                <label for="">No. NIK <span>*</span></label>
+                                <input type="number" name="nik" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Masukkan No.NIK kamu
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary mb-5">
+                                Cek
+                            </button>
+                            <p class="text-center">
+                                Sudah punya akun?
+                                <a href="login.html" class="text-center">Login
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="../assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Jquery JS -->
+    <script src="../assets/libraries/jquery/jquery.min.js"></script>
+    <!-- Carousel JS -->
+    <script src="../assets/libraries/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Alpine JS -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/validation.js"></script>
+</body>
+
+</html>

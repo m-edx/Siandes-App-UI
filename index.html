@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siandesa</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/libraries/bootstrap/css/bootstrap.min.css">
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="assets/libraries/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libraries/owlcarousel/owl.theme.default.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/libraries/fontawesome/font-awesome.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Bottom Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+        <div class="container-fluid d-flex justify-content-evenly mb-3 mt-2">
+            <div class="nav-item">
+                <a class="nav-link active" href="index.html">
+                    <svg width="25" height="25" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.61241 7.07655L9.18728 1.75403C10.2623 0.883807 11.7929 0.861271 12.893 1.69947L19.3181 6.5948C20.0629 7.16223 20.5 8.04482 20.5 8.9811V17.5C20.5 19.1569 19.1569 20.5 17.5 20.5H14.5V16.5C14.5 15.3954 13.6046 14.5 12.5 14.5H9.5C8.39543 14.5 7.5 15.3954 7.5 16.5V20.5H4.5C2.84315 20.5 1.5 19.1569 1.5 17.5V9.40829C1.5 8.50302 1.90879 7.64615 2.61241 7.07655Z" fill="black" fill-opacity="0" stroke="black" stroke-width="1.5"/>
+                        </svg>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="riwayat.html">
+                    <svg width="23" height="26" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 17.5V6C1 3.79086 2.79086 2 5 2H11V6C11 7.65685 12.3431 9 14 9H18V17.5C18 19.7091 16.2091 21.5 14 21.5H5C2.79086 21.5 1 19.7091 1 17.5Z" fill="black" fill-opacity="0.05" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14 2.91421L17.0858 6H14.5C14.2239 6 14 5.77614 14 5.5V2.91421Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="shop.html">
+                    <svg width="25" height="25" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1306 6H6.86936C4.92245 6 3.25832 7.40177 2.92752 9.32038L1.80683 15.8204C1.38533 18.2651 3.26786 20.5 5.74867 20.5H16.2513C18.7321 20.5 20.6147 18.2651 20.1932 15.8204L19.0725 9.32037C18.7417 7.40177 17.0775 6 15.1306 6Z" fill="black" fill-opacity="0.05" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                        <path class="bag" d="M11 1C7.7751 1 7 4.16667 7 6H15C15 4.5 14 1 11 1Z" fill="black" fill-opacity="0.05" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="profile.html">
+                    <svg width="24" height="24" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6495 20H4.77254C2.47787 20 0.901572 17.692 1.73649 15.5546C2.57384 13.411 4.6398 12 6.94115 12H13.4689C15.8671 12 17.987 13.5585 18.7024 15.8476C19.346 17.9071 17.8073 20 15.6495 20Z" fill="black" fill-opacity="0.05" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14 5C14 7.20914 12.2091 9 10 9C7.79086 9 6 7.20914 6 5C6 2.79086 7.79086 1 10 1C12.2091 1 14 2.79086 14 5Z" fill="black" fill-opacity="0.05" stroke="black" stroke-width="1.5"/>
+                        </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Start -->
+    <section class="home-profile" mt-50>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-10">
+                    <div class="row d-flex align-items-center justify-content-start">
+                        <div class="col-2">
+                            <div class="image-profile">
+                                <img class="home-profile-img" src="https://images.unsplash.com/photo-1610433767412-a7b6acb2e878?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGhpamFifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                            </div>
+                        </div>
+                        <div class="col ps-4">
+                            <h5 class="name m-0">Rissa Purnamasari</h5>
+                            <span class="nik">1403012203003844</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-2">
+                    <div class="notification">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section End -->
+
+    <!-- Section Start -->
+    <section class="content-home-section" mt-50>
+        <div class="content-home">
+            <div class="d-flex justify-conntent-center">
+                <div class="line mx-auto mb-4"></div>
+            </div>
+            <!-- Service Siandes Start -->
+            <div class="service-siandes">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3 col-md-3 col-3 mb-3">
+                            <a href="umum/layanan_umum.html">
+                                <div class="card d-flex justify-content-center border-0">
+                                    <div class="card-icon">
+                                        <img src="assets/images/service-icon/umum.svg" alt="siandes-img">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-2">
+                                    Umum
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-3 mb-3">
+                            <a href="penduduk/layanan_penduduk.html">
+                                <div class="card d-flex justify-content-center border-0">
+                                    <div class="card-icon">
+                                        <img src="assets/images/service-icon/penduduk.svg" alt="siandes-img">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-2">
+                                    Penduduk
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-3 mb-3">
+                            <a href="nikah/layanan_nikah.html">
+                                <div class="card d-flex justify-content-center border-0">
+                                    <div class="card-icon">
+                                        <img src="assets/images/service-icon/nikah.svg" alt="siandes-img">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-2">
+                                    Nikah
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-3 mb-3">
+                            <a href="pertanahan/layanan_pertanahan.html">
+                                <div class="card d-flex justify-content-center border-0">
+                                    <div class="card-icon">
+                                        <img src="assets/images/service-icon/tanah.svg" alt="siandes-img">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-2">
+                                    Pertanahan
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-3 mb-3">
+                            <a href="no_penting.html">
+                                <div class="card d-flex justify-content-center border-0">
+                                    <div class="card-icon">
+                                        <img src="assets/images/service-icon/telp.svg" alt="siandes-img">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-2">
+                                    Telp. Penting
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-3 mb-3">
+                            <a target="_blank" href="https://cekbansos.kemensos.go.id/">
+                                <div class="card d-flex justify-content-center border-0">
+                                    <div class="card-icon">
+                                        <img src="assets/images/service-icon/bansos.svg" alt="siandes-img">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-2">
+                                    Bansos
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-3 mb-3">
+                            <a target="_blank" href="https://lindungihakpilihmu.kpu.go.id/">
+                                <div class="card d-flex justify-content-center border-0">
+                                    <div class="card-icon">
+                                        <img src="assets/images/service-icon/dpt.svg" alt="siandes-img">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-2">
+                                    Cek DPT
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-3 mb-3">
+                            <a href="#!" data-bs-toggle="modal" data-bs-target="#lainnya">
+                                <div class="card d-flex justify-content-center border-0">
+                                    <div class="card-icon">
+                                        <img src="assets/images/service-icon/lainnya.svg" alt="siandes-img">
+                                    </div>
+                                </div>
+                                <p class="text-center mt-2">
+                                    Lainnya
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Siandes End -->
+
+            <!-- Banner Siandes Start -->
+            <div class="banner-slider" mt-30>
+                <div class="banner-home">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image-banner">
+                                <img src="assets/images/banner/banner-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-banner">
+                                <img src="assets/images/banner/banner-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-banner">
+                                <img src="assets/images/banner/banner-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Siandes End -->
+
+            <!-- Blogs Siandes Start -->
+            <div class="blogs" mt-50 mb-50>
+                <div class="container">
+                    <div class="blogs-header mb-5">
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="header-title">
+                                    Blogs Terbaru
+                                </h6>
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <div class="blog-all">
+                                    <a href="blogs.html">semua</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blogs-body">
+                        <div class="row">
+                            <div class="card-blogs col-12 mb-4">
+                                <div class="card border-0">
+                                    <img src="https://cdn.dribbble.com/users/2804586/screenshots/17772062/media/5d42a70037515cc9b67facd923523342.png?compress=1&resize=320x240&vertical=top" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="blogs_detail.html">
+                                            <h6 class="card-title">35% discount for premium Bootstrap Themes, Templates, UI Kits</h6>
+                                            <div class="card-text" data-maxlength="250">
+                                                <p>A couple of days ago we got access to the OpenAI’s Beta API platform and I had the occasion to play around with it...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-blogs col-12 mb-4">
+                                <div class="card border-0">
+                                    <img src="https://cdn.dribbble.com/users/5889692/screenshots/17773403/media/b8a8f1e13011054f6c765c9714d91a24.png?compress=1&resize=320x240&vertical=top" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="blogs_detail.html">
+                                            <h6 class="card-title">Bootstrap 5 tutorial: learn how to get started without jQuery</h6>
+                                            <div class="card-text" data-maxlength="250">
+                                                <p>A couple of days ago we got access to the OpenAI’s Beta API platform and I had the occasion to play around with it...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-blogs col-12 mb-4">
+                                <div class="card border-0">
+                                    <img src="https://cdn.dribbble.com/users/1464278/screenshots/17769183/media/bae945f160eef505a105bcf5e293c844.png?compress=1&resize=320x240&vertical=top" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="blogs_detail.html">
+                                            <h6 class="card-title">We built an OpenAI powered Tailwind CSS code generator using GPT-3</h6>
+                                            <div class="card-text" data-maxlength="250">
+                                                <p>A couple of days ago we got access to the OpenAI’s Beta API platform and I had the occasion to play around with it...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-blogs col-12 mb-4">
+                                <div class="card border-0">
+                                    <img src="https://cdn.dribbble.com/users/2804586/screenshots/17772062/media/5d42a70037515cc9b67facd923523342.png?compress=1&resize=320x240&vertical=top" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="blogs_detail.html">
+                                            <h6 class="card-title">35% discount for premium Bootstrap Themes, Templates, UI Kits</h6>
+                                            <div class="card-text" data-maxlength="250">
+                                                <p>A couple of days ago we got access to the OpenAI’s Beta API platform and I had the occasion to play around with it...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-blogs col-12 mb-4">
+                                <div class="card border-0">
+                                    <img src="https://cdn.dribbble.com/users/5889692/screenshots/17773403/media/b8a8f1e13011054f6c765c9714d91a24.png?compress=1&resize=320x240&vertical=top" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="blogs_detail.html">
+                                            <h6 class="card-title">Bootstrap 5 tutorial: learn how to get started without jQuery</h6>
+                                            <div class="card-text" data-maxlength="250">
+                                                <p>A couple of days ago we got access to the OpenAI’s Beta API platform and I had the occasion to play around with it...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-blogs col-12 mb-4">
+                                <div class="card border-0">
+                                    <img src="https://cdn.dribbble.com/users/1464278/screenshots/17769183/media/bae945f160eef505a105bcf5e293c844.png?compress=1&resize=320x240&vertical=top" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="blogs_detail.html">
+                                            <h6 class="card-title">We built an OpenAI powered Tailwind CSS code generator using GPT-3</h6>
+                                            <div class="card-text" data-maxlength="250">
+                                                <p>A couple of days ago we got access to the OpenAI’s Beta API platform and I had the occasion to play around with it...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blogs Siandes End -->
+
+            <!-- Card Custom Start -->
+            <div class="card-custom" mt-50 mb-100>
+                <div class="container">
+                    <div class="card p-4 border-0">
+                        <div class="row d-flex justify-content-end">
+                            <div class="col-9">
+                                <h5 class="card-title">Adminstrasi Kecamatan</h5>
+                                <p class="card-sub mb-4">Ada banyak informasi persyaratan adminstrasi kecamatan yang bisa kamu dapatkan disini.</p>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <div class="btn-card-custom">
+                                        <a href="kecamatan.html" class="btn btn-white">
+                                            Lihat yuk
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Lainnya -->
+            <div class="modal fade" id="lainnya" tabindex="-1" aria-labelledby="lainnyaLabel" aria-hidden="true">
+                <div style="display: table; height: 100%; width: 100%;">
+                    <div style="display: table-cell; vertical-align: middle;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="card border-0 d-flex justify-content-center align-content-center mb-5 p-4">
+                                        <div class="content-lainnya">
+                                            <div class="img-lainnya text-center mb-4">
+                                                <img class="col-8" src="assets/images/illustration/empty.svg" alt="">
+                                            </div>
+                                            <h4 class="text-primary text-center">Maaf!</h4>
+                                            <p class="text-center mb-4">Belum tersedia layanan terbaru.</p>
+                                            <div class="button text-center">
+                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Kembali</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Jquery JS -->
+    <script src="assets/libraries/jquery/jquery.min.js"></script>
+    <!-- Carousel JS -->
+    <script src="assets/libraries/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Alpine JS -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script>
+        // Load More JS
+        $(document).ready(function() {
+            $(".card-blogs").slice(0, 3).show();
+            $("#loadMore").on("click", function(e) {
+                e.preventDefault();
+                $(".card-blogs:hidden").slice(0, 3).slideDown();
+                if ($(".card-blogs:hidden").length == 0) {
+                    $("#loadMore").text("Kembali").addClass("noContent");
+                }
+            });
+
+        })
+    </script>
+    <script>
+        // Limit Text Card
+        $(".card-text p").text(function(index, currentText) {
+            var maxLength = $(this).parent().attr('data-maxlength');
+            if (currentText.length >= maxLength) {
+                return currentText.substr(0, maxLength) + "...";
+            } else {
+                return currentText
+            }
+        });
+    </script>
+    <script>
+        // Image Edit
+        $(document).ready(function() {
+            var readURL = function(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        $('.profile-pic').attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            $(".file-upload").on('change', function() {
+                readURL(this);
+            });
+            $(".upload-button").on('click', function() {
+                $(".file-upload").click();
+            });
+        });
+    </script>
+</body>
+
+</html>

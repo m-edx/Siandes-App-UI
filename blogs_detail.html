@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siandesa</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/libraries/bootstrap/css/bootstrap.min.css">
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="assets/libraries/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libraries/owlcarousel/owl.theme.default.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/libraries/fontawesome/font-awesome.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Section Start -->
+    <section class="home-profile" mt-50>
+        <div class="container">
+            <div class="back-nav">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12 d-flex mb-4">
+                        <a href="index.html">
+                            <i class="fa fa-chevron-left me-3"></i>Kembali
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section End -->
+
+    <!-- Section Start -->
+    <section class="content-home-section">
+        <div class="content-page">
+            <div class="blogs">
+                <div class="container">
+                    <!-- Blogs Siandes Start -->
+                    <div class="blogs" mt-50>
+                        <div class="container">
+                            <div class="blogs-body">
+                                <div class="blogs-detail mb-5">
+                                    <img src=" https://cdn.dribbble.com/users/2804586/screenshots/17772062/media/5d42a70037515cc9b67facd923523342.png?compress=1&resize=320x240&vertical=top " alt=" ">
+                                </div>
+                                <div class="blogs-title">
+                                    <h5 class="card-title">35% discount for premium Bootstrap Themes, Templates, UI Kits</h5>
+                                    <p>By <span class="text-primary">admin</span></p>
+                                </div>
+                                <div class="blogs-content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quidem eveniet ea dolor saepe aliquid deleniti nam cum excepturi veritatis sunt repellendus, veniam, odit, blanditiis expedita in voluptatum provident
+                                        ab! <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum nam recusandae veritatis perferendis ipsam nesciunt, sit consequuntur cumque optio magnam ab nisi debitis cupiditate, officia saepe aliquam
+                                        alias quam voluptates. <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum nam recusandae veritatis perferendis ipsam nesciunt, sit consequuntur cumque optio magnam ab nisi debitis cupiditate,
+                                        officia saepe aliquam alias quam voluptates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blogs Siandes End -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="assets/libraries/bootstrap/js/bootstrap.min.js "></script>
+    <!-- Jquery JS -->
+    <script src="assets/libraries/jquery/jquery.min.js "></script>
+    <!-- Carousel JS -->
+    <script src="assets/libraries/owlcarousel/owl.carousel.min.js "></script>
+    <!-- Alpine JS -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js "></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js "></script>
+    <script src="assets/js/validation.js "></script>
+    <script>
+        // Load More JS
+        $(document).ready(function() {
+            $(".card-blogs ").slice(0, 3).show();
+            $("#loadMore ").on("click ", function(e) {
+                e.preventDefault();
+                $(".card-blogs:hidden ").slice(0, 3).slideDown();
+                if ($(".card-blogs:hidden ").length == 0) {
+                    $("#loadMore ").text("Kembali ").addClass("noContent ");
+                }
+            });
+
+        })
+    </script>
+</body>
+
+</html>
