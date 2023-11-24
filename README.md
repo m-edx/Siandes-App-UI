@@ -3,7 +3,7 @@
 # Demo
 - Use Mobile Simulator for Better Experience
 - [Mobile App Simulator Plugin](https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk?pli=1)
-- [CodeBox-UI](https://democodebox.netlify.app)
+- [CodeBox-UI](https://masedd.github.io/Siandes-App-UI/)
 
 # Features
 - Bootstrap 5
